@@ -1,0 +1,46 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/iyaki/devcontainer-templates/tree/main/src/opencode-ralph
+{
+	"name": "OpenCode Ralph Dev Container",
+	"image": "mcr.microsoft.com/devcontainers/universal:5-linux",
+
+	"mounts": [
+		// Uncomment these lines to persist OpenCode data on the host machine. Make sure to create the directories on the host first.
+		// "source=${localEnv:HOME}/.local/share/opencode,target=/home/codespace/.local/share/opencode,type=bind",
+		// "source=${localEnv:HOME}/.local/state/opencode,target=/home/codespace/.local/state/opencode,type=bind"
+	],
+
+	"containerEnv": {
+		// https://opencode.ai/docs/cli/#environment-variables
+		"OPENCODE_EXPERIMENTAL_LSP_TOOL": "true",
+		"OPENCODE_EXPERIMENTAL_LSP_TY": "true",
+		"OPENCODE_ENABLE_EXPERIMENTAL_MODELS": "true",
+		"OPENCODE_EXPERIMENTAL_MARKDOWN": "true",
+		"OPENCODE_EXPERIMENTAL_PLAN_MODE": "true",
+		"OPENCODE_EXPERIMENTAL_ICON_DISCOVERY": "true",
+		"XDG_DATA_HOME": "/home/codespace/.local/share",
+		"XDG_STATE_HOME": "/home/codespace/.local/state",
+		"XDG_CONFIG_HOME": "/home/codespace/.config"
+	},
+
+	"features": {
+		"ghcr.io/devcontainers-extra/features/npm-packages:1": {
+			"packages": "prettier"
+		},
+		"ghcr.io/devcontainers-extra/features/opencode:1": {},
+		"ghcr.io/iyaki/devcontainer-features/opencode-ralph:1": {}
+	}
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+
+}
