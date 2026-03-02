@@ -11,6 +11,7 @@ jobs:
     outputs:
       templates: ${{ steps.filter.outputs.changes }}
     steps:
+      - uses: actions/checkout@v6
       - uses: dorny/paths-filter@v3.0.2
         id: filter
         with:
