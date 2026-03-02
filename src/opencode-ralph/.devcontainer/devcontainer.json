@@ -24,9 +24,6 @@
 	},
 
 	"features": {
-		"ghcr.io/devcontainers-extra/features/npm-packages:1": {
-			"packages": "prettier"
-		},
 		"ghcr.io/devcontainers-extra/features/opencode:1": {},
 		"ghcr.io/iyaki/devcontainer-features/opencode-ralph:1": {}
 	}
