@@ -1,4 +1,5 @@
 name: 'Smoke test'
+
 inputs:
   template:
     description: 'Template to test'
@@ -9,7 +10,7 @@ runs:
   steps:
     - name: Checkout main
       id: checkout_release
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
 
     - name: Build template
       id: build_template
