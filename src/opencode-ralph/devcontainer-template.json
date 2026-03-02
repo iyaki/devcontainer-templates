@@ -8,19 +8,19 @@
 	"platforms": [
 		"Any",
 		"Python",
-        "Node.js",
-        "JavaScript",
-        "TypeScript",
-        "C++",
-        "Java",
-        "C#",
-        ".NET Core",
-        "PHP",
-        "Go",
-        "Ruby",
-        "Conda"
+		"Node.js",
+		"JavaScript",
+		"TypeScript",
+		"C++",
+		"Java",
+		"C#",
+		".NET Core",
+		"PHP",
+		"Go",
+		"Ruby",
+		"Conda"
 	],
 	"optionalPaths": [
-        ".github/*"
-    ]
+		".github/*"
+	]
 }
