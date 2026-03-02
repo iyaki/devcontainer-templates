@@ -1,6 +1,6 @@
 {
 	"id": "opencode-ralph",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"name": "OpenCode Ralph Template",
 	"description": "A comprehensive development container template for OpenCode-powered projects with development tools pre-configured and ready to use with Spec-Driven Development and Ralph Loops.",
 	"documentationURL": "https://github.com/iyaki/devcontainer-templates/tree/main/src/opencode-ralph",
